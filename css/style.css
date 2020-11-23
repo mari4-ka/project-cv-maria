@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #d3bebe;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+.main-sheet {
+  background: #fff;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 5px 9px 20px gray;
+}
+
+.sidebar {
+  background: #422531;
+  max-width: 370px;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.sidebar-containers {
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+  word-break: break-all;
+}
+.sidebar-name {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.sidebar-name-container {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+.link-font {
+  color: #9885b2;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-left: 15px;
+}
+.photo {
+  max-width: 370px;
+  width: 100%;
+}
+.sidebar-titles {
+  color: #a3a2a2;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.sidebar-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 24px;
+  margin-left: 15px;
+}
+.sidebar-li {
+  font-size: 16px;
+  font-weight: 400;
+  color: #c77a8c;
+  line-height: 24px;
+  margin-left: 15px;
+}
+.skills-dots {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 10px;
+}
+.skills-dots-grey {
+  font-size: 16px;
+  font-weight: 700;
+  color: grey;
+}
+
+.mainbar {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-right: 50px;
+  padding-left: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #422531;
+}
+.mainbar-titles {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 50px;
+}
+.mainbar-job-titles {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.main-container-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #422531;
+  line-height: 24px;
+  margin-left: 15px;
+}
+.date {
+  color: #c77a8c;
+  font-style: oblique;
+}
