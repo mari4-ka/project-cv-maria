@@ -3,14 +3,22 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   background: #d3bebe;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-family: "Montserrat", sans-serif;
+  padding: 40px 20px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
 }
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+
 .main-sheet {
   background: #fff;
   display: flex;
@@ -21,104 +29,146 @@ body {
 
 .sidebar {
   background: #422531;
+  /*--------make corrections---------*/
   max-width: 370px;
   width: 100%;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  /*--------make corrections---------*/
+  padding: 40px 0 40px 0;
 }
-.sidebar-containers {
-  margin-top: 60px;
+
+.sidebar .container {
   margin-left: 40px;
   margin-right: 40px;
   word-break: break-all;
 }
-.sidebar-name {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.sidebar-name-container {
-  text-align: center;
-  font-weight: 600;
-  font-size: 24px;
-  margin-bottom: 60px;
-}
-.link-font {
-  color: #9885b2;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 24px;
-  margin-left: 15px;
+.sidebar .container + .container {
+  margin-top: 60px;
 }
 .photo {
-  max-width: 370px;
-  width: 100%;
+  display: block;
+  /* max-width: 370px;
+  width: 100%; */
+  max-width: 100%;
+  height: auto;
 }
-.sidebar-titles {
+
+.container.name {
+  /* margin-top: 20px;
+  margin-bottom: 60px;
+  margin-bottom: 20px; */
+
+  color: #fff;
+  text-align: center;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.container.name .link {
+  color: #9885b2;
+  text-decoration: none;
+}
+
+.container.name .list,
+.container.social .list {
+  list-style: none;
+}
+
+.sidebar .title {
   color: #a3a2a2;
+  margin-bottom: 20px;
+
   font-size: 24px;
   font-weight: 600;
-  margin-bottom: 20px;
 }
-.sidebar-text {
-  font-size: 16px;
-  font-weight: 400;
+
+.sidebar .text {
   color: #fff;
-  line-height: 24px;
   margin-left: 15px;
 }
-.sidebar-li {
-  font-size: 16px;
-  font-weight: 400;
+
+.skills .item,
+.personality .item,
+.hobbies .item,
+.experience .item,
+.education .item {
   color: #c77a8c;
-  line-height: 24px;
   margin-left: 15px;
 }
-.skills-dots {
-  font-size: 16px;
-  font-weight: 700;
+
+.skills .dots-dark {
   color: #fff;
   margin-left: 10px;
 }
-.skills-dots-grey {
-  font-size: 16px;
-  font-weight: 700;
+
+.skills .dots-lidht {
   color: grey;
 }
 
-.mainbar {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-right: 50px;
-  padding-left: 50px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #422531;
+.social .list {
+  display: flex;
 }
-.mainbar-titles {
+
+.icon-social {
+  height: 20px;
+  width: 20px;
+}
+
+.social .link {
+  fill: #ffffff;
+}
+
+.social .link:hover,
+.social .link:focus {
+  fill: #c77a8c;
+}
+
+.social .item + .item {
+  margin-left: 20px;
+}
+
+.mainbar {
+  padding: 60px 50px 60px 50px;
+  color: #422531;
+  text-align: justify;
+}
+
+.mainbar .container + .container {
+  margin-top: 40px;
+}
+
+.container.description .item {
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+.mainbar .title {
+  margin-bottom: 30px;
+
   font-size: 24px;
   font-weight: 700;
-  line-height: 24px;
-  margin-top: 50px;
 }
-.mainbar-job-titles {
+
+.mainbar .subject {
+  margin-bottom: 10px;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  margin-top: 20px;
-  margin-bottom: 10px;
 }
-.main-container-text {
-  font-size: 16px;
-  font-weight: 400;
-  color: #422531;
-  line-height: 24px;
+.mainbar .text {
   margin-left: 15px;
+
+  color: #422531;
 }
 .date {
   color: #c77a8c;
   font-style: oblique;
+}
+.block + .block {
+  margin-top: 30px;
+}
+
+.education .list + .list {
+  margin-top: 15px;
 }
