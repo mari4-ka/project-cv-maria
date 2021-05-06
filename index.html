@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CV Maria</title>
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/main.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -13,15 +13,46 @@
             <!--side-bar-->
             <aside class="sidebar">
                 <!--contacts-->
-                <div class="container name">
-                    <h1 class="title">Maria</h1>
+                <div class="container social">
+                    <h1 class="title name">Maria Belik</h1>
+                    <img class="photo" src="./images/Foto.jpg" alt="My photo">
                     <ul class="list">
                         <li class="item">
-                            <a class="link" href="tel:380504696149" title="Click to call">+38-050-469-**-**</a></li>
+                            <a class="link" href="tel:380504696149" aria-label="Call me">
+                                <svg class="icon-contact">
+                                    <use href="./images/sprite.svg#icon-smartphone"></use>
+                                </svg>
+                            </a>
+                        </li>
                         <li class="item">
-                            <a class="link" href="mailto:mashabelik@gmail.com" title="Click to mail">@gmail.com</a></li>
+                            <a class="link" href="mailto:mashabelik@gmail.com" aria-label="Mail me">
+                                <svg class="icon-contact">
+                                    <use href="./images/sprite.svg#icon-envelope"></use>
+                                </svg>
+                            </a>
+                        </li>
                         <li class="item">
-                            <img class="photo" src="./img/Foto.jpg" alt="My photo"></li>
+                            <a class="link" href="https://www.linkedin.com/in/maria-belik/" aria-label="My LinkedIn">
+                                <svg class="icon-social">
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a class="link" href="https://github.com/mari4-ka" aria-label="My GitHub">
+                                <svg class="icon-social">
+                                    <use href="./images/sprite.svg#icon-github"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="item">
+                            <a class="link" href="https://www.facebook.com/maria.belik/" aria-label="My Facebook">
+                                <svg class="icon-social">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
 
@@ -48,8 +79,7 @@
                         <li class="item">
                             <span class="text">Excel</span></li>
                         <li class="item">
-                            <span class="text">English</span>
-                                <span class="dots-dark"> ♦♦♦</span><span class="dots-light">♦♦</span></li>
+                            <span class="text">English</span></li>
                     </ul>
                 </div>
                 
@@ -64,7 +94,7 @@
                             <span class="text">HTML</span>
                         </li>
                         <li class="item">
-                            <span class="text">CSS, SASS</span>
+                            <span class="text">CSS, SCSS</span>
                         </li>
                         <li class="item">
                             <span class="text">JS</span>
@@ -96,34 +126,6 @@
                         </li>
                     </ul>
                 </div>
-
-                <!--social-links-->
-                <div class="container social">
-                    <h3 class="title">Social Links</h3>
-                    <ul class="list">
-                        <li class="item">
-                            <a class="link" href="https://www.linkedin.com/in/maria-belik/" aria-label="My LinkedIn">
-                                <svg class="icon-social">
-                                    <use href="./images/sprite.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a class="link" href="https://github.com/mari4-ka" aria-label="My GitHub">
-                                <svg class="icon-social">
-                                    <use href="./images/sprite.svg#icon-github"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="item">
-                            <a class="link" href="https://www.facebook.com/maria.belik/" aria-label="My Facebook">
-                                <svg class="icon-social">
-                                    <use href="./images/sprite.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </aside>
             
             <!--main-bar-->
@@ -131,19 +133,19 @@
                 <!--intro-->
                 <div class="container description">
                     <ul class="list">
-                        <li class="item">Looking for a part-time or flexible schedule competitive position. I would like to be a part of a team at the company where I can use my skills, learn more and bring positive results in creation of new products.</li>
+                        <li class="item">Looking for a part-time or flexible schedule position. I would like to be a part of a team at the company where I can use my skills, learn more and bring positive results in creation of new products.</li>
                         <li class="item">Currently I study Front-End at <a class="link" href="https://goit.ua" target="_blank" title="https://goit.ua">GoIT</a>. Already got 2 projects:</li>
                         <ul class="list courses"> 
                             <li class="item">
-                                &#128736; Personal project after HTML & CSS block (
-                                    <a class="link" href="https://github.com/mari4-ka/goit-markup-hw-08" target="_blank" title="Code on GitHub">Code</a>,
+                                &#128736; Personal project after HTML & CSS block 
+                                    (<a class="link" href="https://github.com/mari4-ka/goit-markup-hw-08" target="_blank" title="Code on GitHub">Code</a>,
                                     <a class="link" href="https://mari4-ka.github.io/goit-markup-hw-08/" target="_blank" title="Site on GitHub">Site</a>).
                             </li>
                             <li class="item">
-                                &#128736; Then Team Project (My part was 'how it’s made?';
-                                    <a class="link" href="https://github.com/mari4-ka/los-ice-creamos">Code</a>,
-                                    <a class="link" href="https://axeholder.github.io/los-ice-creamos/?name=&tel=&email=">Site</a>
-                                ) where we used GitHub, Node.js, Trello and I got a chance to test myself as a Scrum Master.
+                                &#128736; Then Team Project 
+                                    (<a class="link" href="https://github.com/mari4-ka/los-ice-creamos">Code</a>,
+                                    <a class="link" href="https://axeholder.github.io/los-ice-creamos/?name=&tel=&email=">Site</a>) - My part was 'how it’s made?'.
+                                    Here we used GitHub, Node.js, Trello and I have got a chance to test myself as a Scrum Master.
                             </li>
                         </ul>
                     </ul>
@@ -171,27 +173,29 @@
 
                     <!--job4-->
                     <div class="block">
-                        <h3 class="subject">Logistic Specialist (Supply Department), <a href="https://www.reynaers.ua/" target="_blank" title="https://www.reynaers.ua/">Reynaers Ukraine</a></h3>
+                        <h3 class="subject">Logistic Specialist (Supply Department), <a class="link" href="https://www.reynaers.ua/" target="_blank" title="https://www.reynaers.ua/">Reynaers Ukraine</a></h3>
                         <span class="date">December 2011 - November 2013</span> | <span>Velyka Dymerka</span>
                         <ul class="list">
                             <li class="item">
-                                <span class="text">Work with suppliers (Signing agreements, preparing orders, products shipment, primary accounting);</span></li>
+                                <span class="text">Participated in signing agreements at least with 2 foreign companies;</span></li>
                             <li class="item">
-                                <span class="text">Supply statistics and reports;</span></li>
+                                <span class="text">Was responsible for preparing orders on local and foreign suppliers, follow shipments);</span></li>
+                            <li class="item">
+                                <span class="text">Was responsible for preparing supply statistics and forecasts;</span></li>
                         </ul>
                     </div>
 
                     <!--job3-->
                     <div class="block">
-                        <h3 class="subject">Reconciliation Specialist / ATM Network Development Analyst (Operational Department), <a href="https://www.euronetworldwide.com/" target="_blank" title="https://www.euronetworldwide.com/">Euronet Ukraine</a></h3>
+                        <h3 class="subject">Reconciliation Specialist / ATM Network Development Analyst (Operational Department), <a class="link" href="https://www.euronetworldwide.com/" target="_blank" title="https://www.euronetworldwide.com/">Euronet Ukraine</a></h3>
                         <span class="date">February 2009 - November 2011</span> | <span>Kyiv</span>
                         <ul class="list">
                             <li class="item">
-                                <span class="text">Processing of daily/monthly/yearly ATM reports;</span></li>
+                                <span class="text">Prepared ATM Network statistics;</span></li>
                             <li class="item">
-                                <span class="text">ATM Network Analyzing;</span></li>
+                                <span class="text">Participated in promotion activities with Bank-Partners;</span></li>
                             <li class="item">
-                                <span class="text">Site Rent Agreements;</span></li>
+                                <span class="text">Participated in managing with rent agreements;</span></li>
                             <li class="item">
                                 <span class="text">Promotion Activities with Bank-Partners;</span></li>
                         </ul>
@@ -199,31 +203,27 @@
 
                     <!--job2-->
                     <div class="block">
-                        <h3 class="subject">Financial Assistant (Finance Department), <a href="https://www.euronetworldwide.com/" target="_blank" title="https://www.euronetworldwide.com/">Euronet Ukraine</a></h3>
+                        <h3 class="subject">Financial Assistant (Finance Department), <a class="link" href="https://www.euronetworldwide.com/" target="_blank" title="https://www.euronetworldwide.com/">Euronet Ukraine</a></h3>
                         <span class="date">October 2008 - February 2009</span> | <span>Kyiv</span>
                         <ul class="list">
                             <li class="item">
-                                <span class="text">Primary accounting;</span></li>
+                                <span class="text">Participated in managing with rent agreements;</span></li>
                             <li class="item">
-                                <span class="text">Accounting recovery;</span></li>
+                                <span class="text">Primary accounting in 1C/Accounting recovery;</span></li>
                         </ul>                
                     </div>
 
                     <!--job1-->
                     <div class="block">
-                        <h3 class="subject">Office Manager, <a href="https://www.euronetworldwide.com/" target="_blank" title="https://www.euronetworldwide.com/">Euronet Ukraine</a></h3>
+                        <h3 class="subject">Office Manager, <a class="link" href="https://www.euronetworldwide.com/" target="_blank" title="https://www.euronetworldwide.com/">Euronet Ukraine</a></h3>
                         <span class="date">January 2008 - October 2008</span> | <span>Kyiv</span>
                         <ul class="list">
                             <li class="item">
-                                <span class="text">Business correspondence;</span></li>
+                                <span class="text">Business correspondence; managing business trips;</span></li>
                             <li class="item">
-                                <span class="text">Hotels, tickets, visas;</span></li>
+                                <span class="text">Responsible for office supplies</span></li>
                             <li class="item">
-                                <span class="text">Office supplies;</span></li>
-                            <li class="item">
-                                <span class="text">Primary accounting;</span></li>
-                            <li class="item">
-                                <span class="text">Site rent agreements;</span></li>
+                                <span class="text">Primary accounting; keep records of rent agreements;</span></li>
                         </ul>
                     </div>
                 </div>

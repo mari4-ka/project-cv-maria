@@ -1,0 +1,225 @@
+body {
+  background: #d3bebe;
+  padding: 20px 10px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  @media screen and (min-width: $width-tablet) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    padding: 40px 20px;
+  }
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+.main-sheet {
+  background: #fff;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-shadow: 5px 9px 20px gray;
+}
+
+.sidebar {
+  background: #422531;
+  /*--------make corrections---------*/
+  min-width: 150px;
+  max-width: 370px;
+  width: 100%;
+  /*--------make corrections---------*/
+  padding: 20px 0;
+
+  @media screen and (min-width: $width-desktop) {
+    padding: 40px 0;
+  }
+}
+
+.sidebar .container {
+  margin: 0 10px;
+  word-break: break-all;
+
+  @media screen and (min-width: $width-tablet) {
+    margin: 0 25px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    margin: 0 40px;
+  }
+}
+
+.sidebar .container:not(:first-child) {
+  @media screen and (min-width: $width-tablet) {
+    margin: 0 30px;
+  }
+}
+
+.sidebar .container + .container {
+  margin-top: 30px;
+
+  @media screen and (min-width: $width-tablet) {
+    margin-top: 60px;
+  }
+}
+
+.social .list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+
+  margin: -5px;
+  justify-content: center;
+}
+
+.name {
+  text-align: center;
+}
+
+.photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.icon-contact,
+.icon-social {
+  height: 18px;
+  width: 18px;
+
+  @media screen and (min-width: $width-tablet) {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.link {
+  color: #9885b2;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: underline;
+}
+
+.social .link {
+  margin: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+
+  @media screen and (min-width: $width-tablet) {
+    height: 44px;
+    width: 44px;
+  }
+}
+
+.social .link:hover,
+.social .link:focus {
+  fill: #c77a8c;
+}
+
+.sidebar .title {
+  color: #a3a2a2;
+  margin: 0 0 20px 0;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  @media screen and (min-width: $width-tablet) {
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: $width-desktop) {
+    font-size: 24px;
+  }
+}
+
+.sidebar .text {
+  color: #fff;
+  margin-left: 15px;
+}
+
+.skills .item,
+.personality .item,
+.hobbies .item,
+.experience .item,
+.education .item {
+  color: #c77a8c;
+  margin-left: 10px;
+
+  @media screen and (min-width: $width-tablet) {
+    margin-left: 15px;
+  }
+}
+
+.mainbar {
+  padding: 30px 25px;
+  color: #422531;
+  text-align: justify;
+
+  @media screen and (min-width: $width-desktop) {
+    padding: 60px 50px;
+  }
+}
+
+.mainbar .container + .container {
+  margin-top: 20px;
+
+  @media screen and (min-width: $width-desktop) {
+    margin-top: 40px;
+  }
+}
+
+.container.description .item {
+  margin-bottom: 15px;
+  list-style: none;
+}
+
+.mainbar .title {
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.mainbar .subject {
+  margin-bottom: 10px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.mainbar .text {
+  margin-left: 15px;
+
+  color: #422531;
+}
+.date {
+  color: #c77a8c;
+  font-style: oblique;
+}
+.block + .block {
+  margin-top: 30px;
+}
+
+.education .list + .list {
+  margin-top: 15px;
+}
