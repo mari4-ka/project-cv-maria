@@ -272,7 +272,7 @@ summary {
 body {
   background: #d3bebe;
   padding: 20px 10px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
@@ -296,7 +296,7 @@ body {
 }
 
 .main-sheet {
-  background: #fff;
+  background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,7 +455,7 @@ body {
 }
 
 .sidebar .text {
-  color: #fff;
+  color: #ffffff;
   margin-left: 15px;
 }
 
@@ -484,6 +484,12 @@ body {
   text-align: justify;
 }
 
+@media screen and (min-width: 768px) {
+  .mainbar {
+    padding: 45px 35px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .mainbar {
     padding: 60px 50px;
@@ -494,6 +500,12 @@ body {
   margin-top: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .mainbar .container + .container {
+    margin-top: 30px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .mainbar .container + .container {
     margin-top: 40px;
@@ -501,21 +513,28 @@ body {
 }
 
 .container.description .item {
-  margin-bottom: 15px;
   list-style: none;
 }
 
+.container.description .item + .item {
+  margin-top: 15px;
+}
+
+.text-highlight {
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .mainbar .title {
-  margin-bottom: 30px;
+  margin: 0 0 20px 0;
   font-size: 24px;
   font-weight: 700;
 }
 
 .mainbar .subject {
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
   font-size: 18px;
   font-weight: 700;
-  line-height: 24px;
 }
 
 .mainbar .text {
@@ -534,5 +553,9 @@ body {
 
 .education .list + .list {
   margin-top: 15px;
+}
+
+.education .univercity {
+  margin: 0;
 }
 /*# sourceMappingURL=main.css.map */

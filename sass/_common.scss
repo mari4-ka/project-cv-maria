@@ -1,14 +1,14 @@
 body {
-  background: #d3bebe;
+  background: $bg-color-layer;
   padding: 20px 10px;
 
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
+  font-family: $font-family-basic;
+  font-size: $font-size-basic;
+  font-weight: $normal;
+  line-height: $font-height-basic;
 
   @media screen and (min-width: $width-tablet) {
-    font-size: 16px;
+    font-size: $font-size-secondary;
   }
 
   @media screen and (min-width: $width-desktop) {
@@ -22,7 +22,7 @@ body {
 }
 
 .main-sheet {
-  background: #fff;
+  background: $bg-color-mainbar;
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
@@ -30,7 +30,7 @@ body {
 }
 
 .sidebar {
-  background: #422531;
+  background: $bg-color-sidebar;
   /*--------make corrections---------*/
   min-width: 150px;
   max-width: 370px;
@@ -102,7 +102,7 @@ body {
 }
 
 .link {
-  color: #9885b2;
+  color: $text-color-link;
   text-decoration: none;
 }
 
@@ -123,7 +123,7 @@ body {
   width: 36px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  fill: #ffffff;
+  fill: $icon-fill;
 
   @media screen and (min-width: $width-tablet) {
     height: 44px;
@@ -133,27 +133,27 @@ body {
 
 .social .link:hover,
 .social .link:focus {
-  fill: #c77a8c;
+  fill: $accent-color;
 }
 
 .sidebar .title {
-  color: #a3a2a2;
+  color: $title-text-color;
   margin: 0 0 20px 0;
 
-  font-size: 18px;
-  font-weight: 600;
+  font-size: $font-size-title-modal;
+  font-weight: $semibold;
 
   @media screen and (min-width: $width-tablet) {
-    font-size: 22px;
+    font-size: $font-size-title-tablet;
   }
 
   @media screen and (min-width: $width-desktop) {
-    font-size: 24px;
+    font-size: $font-size-title-desktop;
   }
 }
 
 .sidebar .text {
-  color: #fff;
+  color: $text-color-secondary;
   margin-left: 15px;
 }
 
@@ -162,7 +162,7 @@ body {
 .hobbies .item,
 .experience .item,
 .education .item {
-  color: #c77a8c;
+  color: $accent-color;
   margin-left: 10px;
 
   @media screen and (min-width: $width-tablet) {
@@ -172,9 +172,12 @@ body {
 
 .mainbar {
   padding: 30px 25px;
-  color: #422531;
+  color: $text-color-primary;
   text-align: justify;
 
+  @media screen and (min-width: $width-tablet) {
+    padding: 45px 35px;
+  }
   @media screen and (min-width: $width-desktop) {
     padding: 60px 50px;
   }
@@ -183,43 +186,62 @@ body {
 .mainbar .container + .container {
   margin-top: 20px;
 
+  @media screen and (min-width: $width-tablet) {
+    margin-top: 30px;
+  }
+
   @media screen and (min-width: $width-desktop) {
     margin-top: 40px;
   }
 }
 
 .container.description .item {
-  margin-bottom: 15px;
   list-style: none;
 }
 
-.mainbar .title {
-  margin-bottom: 30px;
+.container.description .item + .item {
+  margin-top: 15px;
+}
 
-  font-size: 24px;
-  font-weight: 700;
+.text-highlight {
+  font-size: $font-size-subject;
+  font-weight: $bold;
+}
+
+.mainbar .title {
+  margin: 0 0 20px 0;
+
+  font-size: $font-size-title-desktop;
+  font-weight: $bold;
 }
 
 .mainbar .subject {
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
 
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
+  font-size: $font-size-subject;
+  font-weight: $bold;
+  // line-height: 24px;
 }
+
 .mainbar .text {
   margin-left: 15px;
 
-  color: #422531;
+  color: $text-color-primary;
 }
+
 .date {
-  color: #c77a8c;
+  color: $accent-color;
   font-style: oblique;
 }
+
 .block + .block {
   margin-top: 30px;
 }
 
 .education .list + .list {
   margin-top: 15px;
+}
+
+.education .univercity {
+  margin: 0;
 }
